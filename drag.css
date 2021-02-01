@@ -1,0 +1,60 @@
+body {
+  background: darksalmon;
+}
+
+body h2 {
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.fill {
+  background-image: url(./food1.png);
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.empty {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: 3px solid salmon;
+  background-color: white;
+}
+
+.hold {
+  border: 4px solid #ccc;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
+
+.invisible {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  body h2 {
+    font-size: 15px;
+  }
+}
